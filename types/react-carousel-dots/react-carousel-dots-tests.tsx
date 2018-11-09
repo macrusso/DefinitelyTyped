@@ -11,10 +11,6 @@ const initProps: DotsProps = {
 
 class DotsTest extends React.Component {
     render() {
-        return (
-            <div>
-                <Dots {...initProps} />
-            </div>
-        );
+        return <Dots {...initProps} />;
     }
 }
