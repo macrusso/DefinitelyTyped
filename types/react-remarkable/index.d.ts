@@ -2,17 +2,18 @@
 // Project: https://github.com/acdlite/react-remarkable#readme
 // Definitions by: Mac Rusek <https://github.com/macrusso>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 import * as React from "react";
 
-export interface IRemarkableProps {
+export interface MarkdownProps {
     options?: any;
-    source?: any;
+    source?: string;
     container?: any;
 }
 
-declare class Remarkable extends React.Component<IRemarkableProps> {
-    constructor(props: IRemarkableProps);
+declare class Markdown extends React.Component<MarkdownProps> {
+    constructor(props: MarkdownProps);
 }
 
-export default Remarkable;
+export default Markdown;
