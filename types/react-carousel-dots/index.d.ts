@@ -1,23 +1,22 @@
-// Type definitions for react-carousel-dots 0.1.0
+// Type definitions for react-carousel-dots 0.1
 // Project: https://github.com/fulopdaniel/react-carousel-dots
-// Definitions by: Mac Rusek https://github.com/macrusso
+// Definitions by: Mac Rusek <https://github.com/macrusso>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
-declare module 'react-carousel-dots' {
-  import React from 'react';
+import * as React from "react";
 
-  export interface IDotsProps {
+export interface DotsProps {
     length: number;
     active: number;
     size?: number;
     margin?: number;
     visible?: number;
     className?: string;
-  }
-
-  class Dots extends React.Component<IDotsProps> {
-    constructor(props: IDotsProps);
-  }
-
-  export default Dots;
 }
+
+declare class Dots extends React.Component<DotsProps> {
+    constructor(props: DotsProps);
+}
+
+export default Dots;
